@@ -48,6 +48,7 @@ body{
 .p-content{
     font-family:'Ubuntu-R';
     font-size:1.5rem;
+    overflow:hidden;
 }
 @media screen and (max-width:480px) {
     .main-header{
@@ -72,6 +73,6 @@ body{
     }
     .p-content{
         font-family:'Ubuntu-R';
-        font-size:1rem;
+        font-size:1.3rem;
     }
 }
