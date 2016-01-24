@@ -52,19 +52,19 @@ body{
 @media screen and (max-width:480px) {
     .main-header{
         font-family:'Ubuntu-R';
-        font-size:3rem;
+        font-size:2rem;
         text-align:center;
     }
     .h1-header{
-        font-size:3rem;
+        font-size:2rem;
     }
     .h2-header{
         font-family:'Ubuntu-R';
-        font-size:2rem;
+        font-size:1.6rem;
     }
     .h3-header{
         font-family:'Ubuntu-R';
-        font-size:1.5rem;
+        font-size:1.2rem;
     }
     .h4-header{
         font-family:'Ubuntu-R';
