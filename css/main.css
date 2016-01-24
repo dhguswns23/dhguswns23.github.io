@@ -49,3 +49,29 @@ body{
     font-family:'Ubuntu-R';
     font-size:1.5rem;
 }
+@media screen and (max-width:480px) {
+    .main-header{
+        font-family:'Ubuntu-R';
+        font-size:4rem;
+        text-align:center;
+    }
+    .h1-header{
+        font-size:3rem;
+    }
+    .h2-header{
+        font-family:'Ubuntu-R';
+        font-size:2rem;
+    }
+    .h3-header{
+        font-family:'Ubuntu-R';
+        font-size:1.5rem;
+    }
+    .h4-header{
+        font-family:'Ubuntu-R';
+        font-size:1rem;
+    }
+    .p-content{
+        font-family:'Ubuntu-R';
+        font-size:0.9rem;
+    }
+}
