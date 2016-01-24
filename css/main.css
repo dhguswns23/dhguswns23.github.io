@@ -60,15 +60,15 @@ body{
     }
     .h2-header{
         font-family:'Ubuntu-R';
-        font-size:1.6rem;
+        font-size:1.6rem !important;
     }
     .h3-header{
         font-family:'Ubuntu-R';
-        font-size:1.4rem;
+        font-size:1.4rem !important;
     }
     .h4-header{
         font-family:'Ubuntu-R';
-        font-size:1.2rem;
+        font-size:1.2rem !important;
     }
     .p-content{
         font-family:'Ubuntu-R';
