@@ -22,11 +22,13 @@
     font-family:'UbuntuIt-R';
     src:url('../font/UbuntuMono-R.ttf');
 }
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 body{
-    font-family:'Ubuntu-R';
+    font-weight:300;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 .main-header{
-    font-family:'Ubuntu-R';
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size:6rem;
     text-align:center;
 }
@@ -34,25 +36,24 @@ body{
     font-size:5rem;
 }
 .h2-header{
-    font-family:'Ubuntu-R';
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size:4rem;
 }
 .h3-header{
-    font-family:'Ubuntu-R';
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size:3rem;
 }
 .h4-header{
-    font-family:'Ubuntu-R';
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size:2rem;
 }
 .p-content{
-    font-family:'Ubuntu-R';
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size:1.5rem;
     overflow:hidden;
 }
 @media screen and (max-width:480px) {
     .main-header{
-        font-family:'Ubuntu-R';
         font-size:3rem;
         text-align:center;
     }
@@ -60,19 +61,15 @@ body{
         font-size:2.5rem;
     }
     .h2-header{
-        font-family:'Ubuntu-R';
         font-size:1.6rem !important;
     }
     .h3-header{
-        font-family:'Ubuntu-R';
         font-size:1.4rem !important;
     }
     .h4-header{
-        font-family:'Ubuntu-R';
         font-size:1.2rem !important;
     }
     .p-content{
-        font-family:'Ubuntu-R';
         font-size:1.3rem;
     }
 }
