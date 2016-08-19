@@ -49,7 +49,7 @@
         function timeLineout(fun,transition){
             setTimeout(fun,timeLine += transition);
         };
-
+        $('#first').css('height',($(window).height())+'px')
         $(window).load(function(){
             AppearWithClass($('#first').find('h1'),'disappear');
 //            $('#first').children('h1').removeClass('disappear');
