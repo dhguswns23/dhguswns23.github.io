@@ -15,7 +15,9 @@
 </head>
 <body>
     <div class="very-top initial-transition background-cover background-appear-ready" id="first">
+        <div class="moving-border initial-transition" id="first-third"></div>
         <h1 class="disappear initial-transition">
+            <span class="disappear initial-transition" id="first-fourth">The Web Developer</span>
             <strong class="initial-transition slided-up">Hello,</strong>
             <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
             <span class="slided" id="first-second">Oh HyeonJun.</span>
@@ -58,9 +60,19 @@
 //                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
             },1000);
             timeLineout(function(){
+                $('#first-third').addClass('moved');
+                AppearWithClass($('#first-fourth'),'disappear');
+
+//                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
+            },1000);
+            timeLineout(function(){
+                $('#first-third').addClass('border-white');
+                $('#first').find('span').addClass('border-white');
                 $('#first').addClass('background-appear');
-                $('#first-second').addClass('light-white-background');
-                $('#first').children('h1').addClass('locate-bottom');
+                $('#first').find('h1').addClass('locate-bottom');
+                $('#first-third').addClass('background-light-black');
+
+//                $('#first').children('h1').addClass('locate-bottom');
             },2500)
         })
     </script>

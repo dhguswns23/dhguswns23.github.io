@@ -48,10 +48,12 @@ h1 strong{
     opacity:0 !important;
     letter-spacing:15px;
 }
-
+.border-white{
+    border-color:#fff !important;
+    color:#fff;
+}
 .light-white-background{
     background-color:rgba(255,255,255,0.7);
-    padding:15px;
 }
 
 
@@ -84,7 +86,9 @@ h1 strong{
     background-repeat:no-repeat;
     background-position:center center;
 }
-
+.background-light-black{
+    background-color:rgba(0,0,0,.6);
+}
 .very-top{
     position:absolute;
     z-index: 100;
@@ -106,13 +110,29 @@ h1 strong{
     opacity:1;
     text-align:center;
     top:50%;
-    left:50%;
     position:absolute;
-    transform:translate(-50%,-50%);
-    -o-transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    -moz-transform:translate(-50%,-50%);
-    -webkit-transform:translate(-50%,-50%);
+    transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+}
+.very-top h1 span{
+    display:inline-block;
+}
+.very-top .moving-border{
+    border:1px solid #000;
+    left:-1px;
+    right:-1px;
+    top:-1px;
+    bottom:-1px;
+    position:absolute;
+}
+.very-top .moving-border.moved{
+    left:3%;
+    right:3%;
+    top:3%;
+    bottom:3%;
 }
 .background-appear-ready:before{
     content:'';
@@ -139,8 +159,7 @@ h1 strong{
 }
 .locate-bottom{
     top:80% !important;
-    left:0 !important;
-    transform:translateY(-100%) !important;
+    transform:translate(0,-100%) !important;
     font-color:#ddd;
 }
 @media screen and (max-width:480px){
