@@ -19,11 +19,12 @@
         <div class="inner-wrapper initial-transition" id="first-fifth">
             <div class="moving-border initial-transition" id="first-third"></div>
             <h1 class="disappear initial-transition">
-                <span class="disappear initial-transition" id="first-fourth">The Web Developer</span>
+                <span class="disappear initial-transition white-border-bottom" id="first-fourth">The Web Developer</span>
                 <strong class="initial-transition slided-up">Hello,</strong>
                 <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
                 <span class="slided" id="first-second">Oh HyeonJun.</span>
             </h1>
+            <p class="bottom-right initial-transition disappear" id="first-sixth">Developer @ Arfinity Team</p>
         </div>
     </div>
     <!--<section class="first-section background-cover" id="second" style="">-->
@@ -54,7 +55,8 @@
         $(window).load(function(){
 //            $('#first').children('h1').removeClass('disappear');
             timeLineout(function(){
-                $('#zero').addClass('disappear');
+                DisappearWithClass($('#zero'),'disappear',100);
+
             },1500);
             timeLineout(function(){
                 AppearWithClass($('#first').find('h1'),'disappear');
@@ -71,17 +73,17 @@
             timeLineout(function(){
                 $('#first-third').addClass('moved');
                 AppearWithClass($('#first-fourth'),'disappear');
+                AppearWithClass($('#first-sixth'),'disappear');
 
 //                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
             },1000);
             timeLineout(function(){
-                $('#first-third').addClass('border-white');
+
                 $('#first').find('span').addClass('border-white');
                 $('#first').addClass('background-appear');
-//                $('#first').find('h1').addClass('locate-bottom');
+                $('#first-third').addClass('border-white');
                 $('#first-fifth').addClass('background-light-black');
-
-//                $('#first').children('h1').addClass('locate-bottom');
+                $('#first-sixth').addClass('border-white');
             },1500)
         })
     </script>

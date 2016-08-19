@@ -19,6 +19,20 @@ h1{
 
     font-weight:100;
 }
+h2{
+    /*font-family: 'Nanum Myeongjo', serif;*/
+    /*font-family: 'Noto Serif', serif;*/
+    font-family: 'Josefin Sans',sans-serif;
+    font-size:70px;
+
+    font-weight:100;
+}
+p{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size:19px;
+
+    font-weight:100;
+}
 h1 strong{
     display:block;
     font-weight:100;
@@ -51,6 +65,10 @@ h1 strong{
 .border-white{
     border-color:#fff !important;
     color:#fff;
+}
+.white-border-bottom{
+    border-bottom:2px solid #fff;
+    margin:10px;
 }
 .light-white-background{
     background-color:rgba(255,255,255,0.7);
@@ -139,11 +157,13 @@ h1 strong{
     bottom:-1px;
     position:absolute;
 }
-.very-top .moving-border.moved{
-    left:10px;
-    right:10px;
-    top:10px;
-    bottom:10px;
+
+.very-top .bottom-right{
+    position:absolute;
+    margin:0;
+    font-family:sans-serif;
+    font-weight:400;
+
 }
 .background-appear-ready:before{
     content:'';
@@ -180,6 +200,16 @@ h1 strong{
     h1 strong{
         font-size:65px;
     }
+    .very-top .moving-border.moved{
+        left:15px;
+        right:15px;
+        top:15px;
+        bottom:15px;
+    }
+    .very-top .bottom-right{
+        right:30px;
+        bottom:30px;
+    }
 }
 @media screen and (min-width:481px) and (max-width:720px){
     h1{
@@ -188,8 +218,38 @@ h1 strong{
     h1 strong{
         font-size:65px;
     }
+    .very-top .moving-border.moved{
+        left:30px;
+        right:30px;
+        top:30px;
+        bottom:30px;
+    }
+    .very-top .bottom-right{
+        right:45px;
+        bottom:45px;
+    }
 }
 @media screen and (min-width:721px) and (max-width:1180px){
+    .very-top .moving-border.moved{
+        left:30px;
+        right:30px;
+        top:30px;
+        bottom:30px;
+    }
+    .very-top .bottom-right{
+        right:45px;
+        bottom:45px;
+    }
 }
 @media screen and (min-width:1181px){
+    .very-top .moving-border.moved{
+        left:30px;
+        right:30px;
+        top:30px;
+        bottom:30px;
+    }
+    .very-top .bottom-right{
+        right:45px;
+        bottom:45px;
+    }
 }
