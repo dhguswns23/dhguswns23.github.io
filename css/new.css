@@ -143,3 +143,23 @@ h1 strong{
     transform:translateY(-100%) !important;
     font-color:#ddd;
 }
+@media screen and (max-width:480px){
+    h1{
+        font-size:40px;
+    }
+    h1 strong{
+        font-size:65px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:720px){
+    h1{
+        font-size:40px;
+    }
+    h1 strong{
+        font-size:65px;
+    }
+}
+@media screen and (min-width:721px) and (max-width:1180px){
+}
+@media screen and (min-width:1181px){
+}
