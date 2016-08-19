@@ -14,6 +14,7 @@
     <!--FONT-->
 </head>
 <body>
+<div class="loader" id="zero"></div>
     <div class="very-top initial-transition background-cover background-appear-ready" id="first">
         <div class="inner-wrapper initial-transition" id="first-fifth">
             <div class="moving-border initial-transition" id="first-third"></div>
@@ -25,9 +26,9 @@
             </h1>
         </div>
     </div>
-    <section class="first-section background-cover" id="second" style="">
-
-    </section>
+    <!--<section class="first-section background-cover" id="second" style="">-->
+<!---->
+    <!--</section>-->
 </body>
 <footer>
     <!--JQuery-->
@@ -51,8 +52,14 @@
         };
         $('#first').css('height',($(window).height())+'px')
         $(window).load(function(){
-            AppearWithClass($('#first').find('h1'),'disappear');
 //            $('#first').children('h1').removeClass('disappear');
+            timeLineout(function(){
+                $('#zero').addClass('disappear');
+            },1500);
+            timeLineout(function(){
+                AppearWithClass($('#first').find('h1'),'disappear');
+
+            },1000);
             timeLineout(function(){
                 DisappearWithClass($('#first').find('strong'),'height-disappear',1000);
             },1000);
