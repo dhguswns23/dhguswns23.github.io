@@ -15,13 +15,15 @@
 </head>
 <body>
     <div class="very-top initial-transition background-cover background-appear-ready" id="first">
-        <div class="moving-border initial-transition" id="first-third"></div>
-        <h1 class="disappear initial-transition">
-            <span class="disappear initial-transition" id="first-fourth">The Web Developer</span>
-            <strong class="initial-transition slided-up">Hello,</strong>
-            <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
-            <span class="slided" id="first-second">Oh HyeonJun.</span>
-        </h1>
+        <div class="inner-wrapper initial-transition" id="first-fifth">
+            <div class="moving-border initial-transition" id="first-third"></div>
+            <h1 class="disappear initial-transition">
+                <span class="disappear initial-transition" id="first-fourth">The Web Developer</span>
+                <strong class="initial-transition slided-up">Hello,</strong>
+                <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
+                <span class="slided" id="first-second">Oh HyeonJun.</span>
+            </h1>
+        </div>
     </div>
     <section class="first-section background-cover" id="second" style="">
 
@@ -49,7 +51,7 @@
         };
 
         $(window).load(function(){
-            AppearWithClass($('#first').children('h1'),'disappear');
+            AppearWithClass($('#first').find('h1'),'disappear');
 //            $('#first').children('h1').removeClass('disappear');
             timeLineout(function(){
                 DisappearWithClass($('#first').find('strong'),'height-disappear',1000);
@@ -69,11 +71,11 @@
                 $('#first-third').addClass('border-white');
                 $('#first').find('span').addClass('border-white');
                 $('#first').addClass('background-appear');
-                $('#first').find('h1').addClass('locate-bottom');
-                $('#first-third').addClass('background-light-black');
+//                $('#first').find('h1').addClass('locate-bottom');
+                $('#first-fifth').addClass('background-light-black');
 
 //                $('#first').children('h1').addClass('locate-bottom');
-            },2500)
+            },1500)
         })
     </script>
 </footer>
