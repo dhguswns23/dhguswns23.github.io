@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>
+        Oh Hyeon-Jun
+    </title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+
+
+    <!--FONT-->
+</head>
+<body>
+    <div class="very-top initial-transition background-cover background-appear-ready" id="first">
+        <h1 class="disappear initial-transition">
+            <strong class="initial-transition slided-up">Hello,</strong>
+            <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
+            <span class="slided" id="first-second">Oh HyeonJun.</span>
+        </h1>
+    </div>
+    <section class="first-section background-cover" id="second" style="">
+
+    </section>
+</body>
+<footer>
+    <!--JQuery-->
+    <script src="js/jQuery.js"></script>
+    <!--JAVASCRIPT Plugin-->
+    <script>
+        function AppearWithClass($selector,addedClass){
+            $selector.css('height','initial');
+            $selector.removeClass(addedClass);
+        }
+
+        function DisappearWithClass($selector,addedClass,transition){
+            $selector.addClass(addedClass);
+            setTimeout(function(){
+                $selector.css('height','0');
+            },transition);
+        }
+        var timeLine = 0;
+        function timeLineout(fun,transition){
+            setTimeout(fun,timeLine += transition);
+        };
+
+        $(window).load(function(){
+            AppearWithClass($('#first').children('h1'),'disappear');
+//            $('#first').children('h1').removeClass('disappear');
+            timeLineout(function(){
+                DisappearWithClass($('#first').find('strong'),'height-disappear',1000);
+            },1000);
+
+            timeLineout(function(){
+                DisappearWithClass($('#first').find('#first-first'),'slide-disappear',1000);
+//                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
+            },1000);
+            timeLineout(function(){
+                $('#first').addClass('background-appear');
+                $('#first-second').addClass('light-white-background');
+                $('#first').children('h1').addClass('locate-bottom');
+            },2500)
+        })
+    </script>
+</footer>
+
+</html>
