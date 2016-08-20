@@ -107,6 +107,9 @@ h1 strong{
 .background-light-black{
     background-color:rgba(0,0,0,.6);
 }
+.background-light-violet{
+    background-color:rgba(44,14,65,.3);
+}
 .loader{
     z-index: 101;
     width:100%;
@@ -151,10 +154,10 @@ h1 strong{
 }
 .very-top .moving-border{
     border:1px solid #000;
-    left:-1px;
-    right:-1px;
-    top:-1px;
-    bottom:-1px;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
     position:absolute;
 }
 
