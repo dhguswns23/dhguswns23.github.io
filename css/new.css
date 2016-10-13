@@ -301,6 +301,7 @@ h1 strong{
     -moz-transition:500ms;
     -webkit-transition:500ms;
     margin-top:20px;
+    /*should be changed.*/
 }
 .ghost-button:hover{
     background-color:rgba(0,0,0,.9);
