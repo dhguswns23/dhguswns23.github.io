@@ -300,6 +300,7 @@ h1 strong{
     -ms-transition:500ms;
     -moz-transition:500ms;
     -webkit-transition:500ms;
+    margin-top:20px;
 }
 .ghost-button:hover{
     background-color:rgba(0,0,0,.9);
