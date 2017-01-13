@@ -1,0 +1,11 @@
+$black: #454545;
+$light-gray: #aaa;
+$gray: #888;
+
+
+@mixin top-left{
+  position:absolute;
+  top: 10px;
+  left: 15px;
+  color: $black;
+}

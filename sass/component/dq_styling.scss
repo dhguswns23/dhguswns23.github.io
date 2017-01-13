@@ -1,0 +1,60 @@
+@import "../mixin/super.scss";
+
+body{
+  font-family: sans-serif;
+}
+img{
+    border: none !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4) !important;
+}
+a{
+  &.small{
+    font-size: 20px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    text-transform: none !important;
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+p{
+  &.small{
+    font-size: 30px;
+  }
+  &.small-margin{
+    margin:10px 0;
+  }
+  &.comment{
+      color: $light-gray;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 0px;
+  }
+}
+ul{
+  &.small{
+    > li{
+      font-size: 32px;
+    }
+  }
+}
+.pre-header{
+  @include top-left;
+}
