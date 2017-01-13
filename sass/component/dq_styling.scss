@@ -1,5 +1,7 @@
 @import "../mixin/super.scss";
-
+td{
+    text-align: center !important;
+}
 body{
   font-family: sans-serif;
 }
@@ -36,15 +38,15 @@ h5{
 }
 p{
   &.small{
-    font-size: 30px;
+    font-size: 25px;
   }
   &.small-margin{
     margin:10px 0;
   }
   &.comment{
-      color: $light-gray;
+      color: $gray;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 700;
       margin-top: 0px;
   }
 }

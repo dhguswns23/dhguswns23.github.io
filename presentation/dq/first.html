@@ -119,7 +119,8 @@
 						<li>큰 데이터셋을 다룰때 사용성이 급격하게 떨어짐</li>
 						<li>빈약한 튜토리얼, 질 좋은 레거시 모델의 부재로 학습비용이 높음</li>
 						<li>코딩과의 작업플로우가 다름</li>
-						<li>꽤 괜찮은 데이터 처리 방식</li>
+						<li>꽤 괜찮은 데이터 전처리 방식</li>
+						<li>오퍼레이터가 많은 만큼 빠르게 모델링 가능</li>
 					</ul>
 				</section>
 			</section>
@@ -128,6 +129,121 @@
 					<h2 >Big ML</h2>
 					<a class="small" href="https://bigml.com/">https://bigml.com/</a>
 				</section>
+				<section>
+					<h4>들어가기 전...</h4>
+					<p class="small">앞서 테스트했던 RapidMiner와 작업스타일이 매우 다름.</p>
+					<p class="small">직접 모델을 짜고 모듈링을 해야하는 RapidMiner와는 달리</p>
+					<p class="small">Big ML은 모델은 알아서 짜주고 변수들만 변경해주는 방식</p>
+				</section>
+				<section>
+					<h2>UI / UX 및 기능</h2>
+				</section>
+				<section>
+					<h4>처음 들어가면 어디서 부터 뭘 해야할지 알기 어려움.</h4>
+					<img src="./first/bm_uncom_layout.png" />
+					<p class="comment">(불친절한 UI)</p>
+				</section>
+				<section>
+					<h4>한번 클릭으로 모델을 생성</h4>
+					<ul class="small">
+						<li>학습 비용이 낮음</li>
+						<li>feature scaling, cost function, optimizer 등을 따로 지정할 수 없음</li>
+						<li>weight 같은 간단한 파라미터들만 만질 수 있음</li>
+					</ul>
+					<p class="small"> -> 구체적인 모델링을 할 수 없음.</p>
+				</section>
+				<section>
+					<h4>개발환경에서 사용할수 있는 API 제공</h4>
+					<img src="./first/bm_com_high.png" />
+					<p class="comment">(서비스화가 편하게 될듯하다.)</p>
+				</section>
+				<section>
+					<h2>성능</h2>
+				</section>
+				<section>
+					<h4>백앤드에서 학습을 시킴</h4>
+					<ul class="small">
+						<li>클라이언트의 머신 퍼포먼스와 무관</li>
+						<li>학습이 비교적 느림</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Totorials</h2>
+				</section>
+				<section>
+					<h4>동영상으로 제공</h4>
+					<img src="./first/bm_com_video_base_tutorials.png" />
+					<p class="comment">동영상 길이가 다 다르다.</p>
+					<p class="small">몇개의 실습영상을 따라가면 성대부분의 기능을 이해</p>
+				</section>
+				<section>
+					<h3>요약</h3>
+					<ul class="small">
+						<li>매우 쉬운 UI / UX</li>
+						<li>쉬운 만큼 모델링 기능도 적어 자신의 모델에 대한 이해 X</li>
+						<li>매우 높은 웹 이식성</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h1>비교</h1>
+				<table>
+					<thead>
+						<td>
+
+						</td>
+						<td>
+							RapidMiner
+						</td>
+						<td>
+							BigML
+						</td>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								학습비용
+							</td>
+							<td>
+
+							</td>
+							<td>
+								o
+							</td>
+						</tr>
+						<tr>
+							<td>
+								복잡도
+							</td>
+							<td>
+								o
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								전문성
+							</td>
+							<td>
+								o
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								이식성
+							</td>
+							<td>
+
+							</td>
+							<td>
+								o
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 		</div>
 	</div>
