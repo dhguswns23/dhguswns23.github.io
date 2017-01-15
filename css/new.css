@@ -119,12 +119,13 @@ h1 strong{
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
+    background-attachment: fixed;
 }
 .background-light-black{
     background-color:rgba(0,0,0,.6);
 }
 .background-light-violet{
-    background-color:rgba(44,14,65,.3);
+    background-color:rgba(44,14,65,.5);
 }
 .loader{
     z-index: 101;

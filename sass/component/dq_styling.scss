@@ -60,3 +60,8 @@ ul{
 .pre-header{
   @include top-left;
 }
+
+.absolute {
+  position: absolute !important;
+  display: inline-block !important;
+}

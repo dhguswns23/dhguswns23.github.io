@@ -62,6 +62,11 @@
 					<p class="comment">(기본적인 문법을 제공해줘 코딩을 모르더라도 어느정도 사용할 수 있을듯 보인다.)</p>
 				</section>
 				<section>
+					<h4>많은 오퍼레이터</h4>
+					<img src="./first/rm_uncom_many_oper.png" />
+					<p class="comment">(장점일수도 단점일수도 있다.)</p>
+				</section>
+				<section>
 					<h4>각 오퍼레이터 노드들을 이해하는게 난해</h4>
 					<img src="./first/rm_uncom_helper.png" />
 					<p class="comment">(Documentation과 내용이 똑같다.)</p>
@@ -77,11 +82,6 @@
 					<img src="./first/rm_uncom_restricted_data.png" />
 					<p class="comment">(DeepLearning 노드 같은경우 Label 칼럼이 필수적)</p>
 					<p class="small">공식과 원리를 이해하고 있더라도 즉각적인 구현이 어려울 수 있음.</h5>
-				</section>
-				<section>
-					<h4>많은 오퍼레이터</h4>
-					<img src="./first/rm_uncom_many_oper.png" />
-					<p class="comment">(장점일수도 단점일수도 있다.)</p>
 				</section>
 				<section>
 					<h4>결국 Documentation 정독이 반 필수적</h4>
@@ -114,6 +114,22 @@
 					<p class="comment">(프로그램약 뿐만 아니라 전반적인 OS전체가 느려진다.)</p>
 				</section>
 				<section>
+					<h4>적용</h4>
+					<p>Mnist Digits Recognition</p>
+					<a class="small" href="http://pjreddie.com/projects/mnist-in-csv/">http://pjreddie.com/projects/mnist-in-csv/</a>
+				</section>
+				<section>
+					<h4>Model</h4>
+					<img src="./first/rm_dl_model.jpg" />
+					<p class="comment">(가격 정책으로 1만개 데이터만 학습시킬수 있다.)</p>
+				</section>
+				<section>
+					<h4>Evaluation</h4>
+					<img src="./first/rm_dl_result.jpg" />
+					<p class="comment">(거의 100%에 근접한 정확도)</p>
+					<p class="small">각각 64,32,16개의 히든 레이어, Cross Entropy, ReLU</p>
+				</section>
+				<section>
 					<h3>요약</h3>
 					<ul class="small">
 						<li>큰 데이터셋을 다룰때 사용성이 급격하게 떨어짐</li>
@@ -139,11 +155,6 @@
 					<h2>UI / UX 및 기능</h2>
 				</section>
 				<section>
-					<h4>처음 들어가면 어디서 부터 뭘 해야할지 알기 어려움.</h4>
-					<img src="./first/bm_uncom_layout.png" />
-					<p class="comment">(불친절한 UI)</p>
-				</section>
-				<section>
 					<h4>한번 클릭으로 모델을 생성</h4>
 					<ul class="small">
 						<li>학습 비용이 낮음</li>
@@ -158,6 +169,20 @@
 					<p class="comment">(서비스화가 편하게 될듯하다.)</p>
 				</section>
 				<section>
+					<h4>처음 들어가면 어디서 부터 뭘 해야할지 알기 어려움.</h4>
+					<img src="./first/bm_uncom_layout.png" />
+					<p class="comment">(불친절한 UI)</p>
+				</section>
+				<section>
+					<h2>Totorials</h2>
+				</section>
+				<section>
+					<h4>동영상으로 제공</h4>
+					<img src="./first/bm_com_video_base_tutorials.png" />
+					<p class="comment">동영상 길이가 다 다르다.</p>
+					<p class="small">몇개의 실습영상을 따라가면 성대부분의 기능을 이해</p>
+				</section>
+				<section>
 					<h2>성능</h2>
 				</section>
 				<section>
@@ -168,13 +193,17 @@
 					</ul>
 				</section>
 				<section>
-					<h2>Totorials</h2>
+					<h4>적용</h4>
+					<p>Mnist Digits Recognition</p>
+					<a class="small" href="http://pjreddie.com/projects/mnist-in-csv/">http://pjreddie.com/projects/mnist-in-csv/</a>
 				</section>
 				<section>
-					<h4>동영상으로 제공</h4>
-					<img src="./first/bm_com_video_base_tutorials.png" />
-					<p class="comment">동영상 길이가 다 다르다.</p>
-					<p class="small">몇개의 실습영상을 따라가면 성대부분의 기능을 이해</p>
+					<h3>1-Click Model</h1>
+					<img src="./first/bm_dl_model.jpg" />
+				</section>
+				<section>
+					<h3>1-Click Ensemble (Dropout 70%)</h1>
+					<img src="./first/bm_dl_ensemble.jpg" />
 				</section>
 				<section>
 					<h3>요약</h3>
@@ -255,7 +284,8 @@
 					height: "100%",
 					margin: 0,
 					minScale: 1,
-					maxScale: 1
+					maxScale: 1,
+					fragments: true,
 				});
 				Reveal.configure({
 				  keyboard: {
