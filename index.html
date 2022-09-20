@@ -1,155 +1,16 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>
-        Oh Hyeon-Jun
-    </title>
+    <meta property="og:title" content="Oh HyeonJun CV">
+    <meta property="og:description" content="A Biography of Oh Hyeonjun who is software developer">
+    <title>Oh HyeonJun CV</title>
+    <base href="/">
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/new.css">
-    <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600,700,800" rel="stylesheet
-
-    <!--FONT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body style="">
-<div class="loader initial-transition" id="zero"></div>
-<section class="very-top initial-transition background-cover background-appear-ready" id="first">
-    <div class="inner-wrapper initial-transition" id="first-fifth">
-        <div class="moving-border initial-transition" id="first-third"></div>
-        <h1 class="disappear initial-transition">
-            <span class="disappear initial-transition" id="first-fourth">The Web Developer</span>
-            <strong class="initial-transition slided-up">Hello,</strong>
-            <span id="first-first" style="opacity:1" class="slided initial-transition"> My name is </span>
-            <span class="slided" id="first-second">Oh HyeonJun.</span>
-            <a href="/details" class="ghost-button">Details</a>
-        </h1>
-        <p class="bottom-right initial-transition disappear" id="first-sixth">Developer @ Arfinity Team</p>
-    </div>
-</section><section class="" style="height:600px;"></section><!--very-top-->
-<!--<section class="first-section">-->
-    <!--<div class="content-wrapper float-box">-->
-        <!--<figure class="big-content">-->
-            <!--<div class="inner-wrapper">-->
-                <!--<div class="word-wrapper white-background">-->
-                    <!--<p>Undergraduated at</p>-->
-                    <!--<h5>Ulsan National Institute of Science and Technology</h5>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="inner-border">-->
-
-            <!--</div>-->
-        <!--</figure>-->
-        <!--<figure class="big-content" style="background-image:url('../images/first_background2.jpg')">-->
-            <!--<div class="inner-wrapper">-->
-                <!--<div class="word-wrapper white-background">-->
-                    <!--<p>Undergraduated at</p>-->
-                    <!--<h5>Ulsan National Institute of Science and Technology</h5>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="inner-border">-->
-
-            <!--</div>-->
-        <!--</figure>-->
-
-        <!--&lt;!&ndash;<figure class="small-content black">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="inner-border"></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="center-wrapper">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h5>SCHOOL</h5>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
-        <!--&lt;!&ndash;<figure class="small-content">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="inner-border">&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="center-wrapper">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h5>BORN</h5>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
-        <!--&lt;!&ndash;<figure class="small-content">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="inner-border">&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="center-wrapper">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h5>HOBBY</h5>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
-        <!--&lt;!&ndash;<figure class="small-content black">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="inner-border">&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="center-wrapper">&ndash;&gt;-->
-                <!--&lt;!&ndash;<h5>EMAIL</h5>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
-    <!--</div>-->
-
-<!--</section>-->
-<!--<section class="first-section background-cover" id="second" style="">-->
-<!---->
-<!--</section>-->
-</body>
-<footer>
-    <!--JQuery-->
-    <script src="js/jQuery.js"></script>
-    <!--JAVASCRIPT Plugin-->
-    <script>
-        function AppearWithClass($selector,addedClass){
-            $selector.css('height','initial');
-            $selector.removeClass(addedClass);
-        }
-
-        function DisappearWithClass($selector,addedClass,transition){
-            $selector.addClass(addedClass);
-            setTimeout(function(){
-                $selector.css('height','0');
-            },transition);
-        }
-        var timeLine = 0;
-        function timeLineout(fun,transition){
-            setTimeout(fun,timeLine += transition);
-        };
-        $('#first').css('height',($(window).height())+'px')
-        $(document).ready(function(){
-            $(this).scrollTop(0);
-            $('body').css('overflow','hidden');
-        })
-        $(window).load(function(){
-//            $('#first').children('h1').removeClass('disappear');
-            timeLineout(function(){
-                DisappearWithClass($('#zero'),'disappear',100);
-
-            },1500);
-            timeLineout(function(){
-                AppearWithClass($('#first').find('h1'),'disappear');
-
-            },1000);
-            timeLineout(function(){
-                DisappearWithClass($('#first').find('strong'),'height-disappear',1000);
-            },1000);
-
-            timeLineout(function(){
-                DisappearWithClass($('#first').find('#first-first'),'slide-disappear',1000);
-//                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
-            },1000);
-            timeLineout(function(){
-                $('#first-third').addClass('moved');
-                AppearWithClass($('#first-fourth'),'disappear');
-                AppearWithClass($('#first-sixth'),'disappear');
-
-//                DisappearWithClass($('#first').children('h1'),'split-disappear',2500);
-            },1000);
-            timeLineout(function(){
-
-                $('#first').find('span').addClass('border-white');
-                $('#first').addClass('background-appear');
-                $('#first-third').addClass('border-white');
-                $('#first-fifth').addClass('background-light-violet');
-                $('#first-sixth').addClass('border-white');
-                $('body').css('overflow','auto');
-            },1500)
-
-            //end of very-top transition
-        })
-    </script>
-</footer>
-
+<body>
+<app-root></app-root>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>
